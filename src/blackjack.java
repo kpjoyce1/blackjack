@@ -17,6 +17,7 @@ public class blackjack {
 		int games = 0;
 
 		while (games < 7) {
+			System.out.println("Match #" + (games + 1));
 			
 			hand dealer = new hand("Dealer");
 			hand player = new hand("Player");
@@ -53,11 +54,11 @@ public class blackjack {
 			dealer.showHand();
 			
 			if(player.total > 21 || player.total < dealer.total){
-				System.out.println("The house always wins");
+				System.out.println("The house always wins\n");
 			}else if(dealer.total > 21 || dealer.total < player.total){
-				System.out.println("Player wins");
+				System.out.println("Player wins\n");
 			}else
-				System.out.println("It's a push");
+				System.out.println("It's a push\n");
 			
 			games++;
 		}
