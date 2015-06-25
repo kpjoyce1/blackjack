@@ -2,12 +2,12 @@
 public class card {
 
 	/*
-	 
-	Card class with card constructor. Will be given a random number between
-	0-51. Which will determine its value and suit
-	Cards will have atrib, value, isAnAce
-	
-	*/
+	 *
+	 *Card class with card constructor. Will be given a random number between
+	 *0-51. Which will determine its value and suit
+	 *Cards will have atrib, value, isAnAce
+	 *
+	 */
 	String atrib;
 	int value;
 	boolean isAnAce;
@@ -55,7 +55,12 @@ public class card {
 			this.value = 11;
 		}
 		
-		this.atrib.concat(suit);
+		this.atrib += suit;
+		
+		if(this.atrib.contains("A"))
+			this.isAnAce = true;
+		else
+			this.isAnAce = false;
 		
 	}
 	
