@@ -1,4 +1,3 @@
-//import card;
 
 public class blackjack {
 
