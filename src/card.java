@@ -55,7 +55,12 @@ public class card {
 			this.value = 11;
 		}
 		
-		this.atrib.concat(suit);
+		this.atrib += suit;
+		
+		if(this.atrib.contains("A"))
+			this.isAnAce = true;
+		else
+			this.isAnAce = false;
 		
 	}
 	
